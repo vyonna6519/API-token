@@ -1,0 +1,10 @@
+.heading {
+    font-weight: bold;
+    margin-top: 50px;
+    color: blue;
+}
+
+ .heading p{
+font-size:20px;
+margin-top: 30px;
+}
