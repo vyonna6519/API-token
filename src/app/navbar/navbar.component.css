@@ -1,0 +1,15 @@
+.body{
+    background-color: rgb(102, 104, 104);
+}
+h1{
+color: aliceblue;
+font-family: sans-serif;
+font-weight:bold;
+}
+
+.card{
+    width: 100%;
+    margin-left: 50%;
+    margin-top: 30%;
+    
+}
