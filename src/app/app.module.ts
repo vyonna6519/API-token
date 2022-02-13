@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
 import { RepoComponent } from './repo/repo.component';
+import { DatePipe } from './date.pipe';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { RepoComponent } from './repo/repo.component';
     NavbarComponent,
     HomeComponent,
     UserComponent,
-    RepoComponent
+    RepoComponent,
+    DatePipe
   ],
   imports: [
     BrowserModule,

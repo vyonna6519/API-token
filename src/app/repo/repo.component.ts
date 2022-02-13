@@ -11,7 +11,7 @@ export class RepoComponent implements OnInit {
   repos!:any;
   SearchRepoRequestService: any;
 
-  constructor(private SearchRepoService: SearchRepoService) { }
+  constructor() { }
   
   ngOnInit(): void {
   }

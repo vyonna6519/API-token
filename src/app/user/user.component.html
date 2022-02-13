@@ -1,1 +1,38 @@
-<p>user works!</p>
+<nav class="navbar navbar-light bg-success ">
+    <h3>Search for github user.</h3>
+  <form class="">
+  <div class="input-group">
+    <input type="text" class="form-control" name="userinput" placeholder="Search user name" required/>
+    <div class="input-group-btn">
+      <button class="btn btn-default" type="submit" (click)="search()" >
+        <i class="glyphicon glyphicon-search"></i>
+      </button>
+    </div>
+  </div>
+</form>
+</nav>
+
+<div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body bg-light">
+        <img [src]="user.avatar_url" alt="" class="img-fluid" width="150px">
+        <h5 class="card-title">User name: {{user.name}}</h5>
+        <h5 class="card-title">Login name: {{searchuserQuery}}</h5>
+        <p class="card-text">Bio:{{user.bio}}</p>
+        <p class="card-text">when joined github:{{user.created_at|date}}</p>
+        <a [href]="user.html_url" class="btn btn-primary">Github</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-9">
+    <div class="card bg-light">
+      <div class="card-body"  *ngFor="let repo of repos">
+        <h5 class="card-title">Repository name:{{repo.name}}</h5>
+        <p class="card-text">Description:{{repo.description}}</p>
+        <a [href]="repo.html_url" class="btn btn-primary">view repo</a>
+      </div>
+    </div>
+  </div>
+</div>
+
