@@ -1,8 +1,8 @@
 <nav class="navbar navbar-light bg-success ">
-    <h3>Search for github user.</h3>
+    <h3>Search for user.</h3>
   <form class="">
   <div class="input-group">
-    <input type="text" class="form-control" name="userinput" placeholder="Search user name" required/>
+    <input type="text" class="form-control" name="userinput" placeholder="Search for user " required/>
     <div class="input-group-btn">
       <button class="btn btn-default" type="submit" (click)="search()" >
         <i class="glyphicon glyphicon-search"></i>
@@ -17,10 +17,10 @@
     <div class="card">
       <div class="card-body bg-light">
         <img [src]="user.avatar_url" alt="" class="img-fluid" width="150px">
-        <h5 class="card-title">User name: {{user.name}}</h5>
+        <h5 class="card-title">User nam: {{user.name}}</h5>
         <h5 class="card-title">Login name: {{searchuserQuery}}</h5>
         <p class="card-text">Bio:{{user.bio}}</p>
-        <p class="card-text">when joined github:{{user.created_at|date}}</p>
+        <p class="card-text">joined github:{{user.created_at|date}}</p>
         <a [href]="user.html_url" class="btn btn-primary">Github</a>
       </div>
     </div>
