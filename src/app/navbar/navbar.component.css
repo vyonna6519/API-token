@@ -14,3 +14,8 @@ font-weight:bold;
     
 }
 
+button{
+    background-color: rgb(95, 29, 29);
+    color: white;
+    font-size: 22px;
+}
