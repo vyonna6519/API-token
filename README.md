@@ -1,28 +1,39 @@
-# Home
+# GITHUB WEB
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
+By Vyonna Njenga.
+
+## Description
+This is a web-app built to enable search users and repositories.
+
+This is a web application made using Angular where users enter GitHub username and repositories and get results of their search from github.
+
+
+## screenshot
+
+![Screenshot from 2022-02-13 22-09-50](https://user-images.githubusercontent.com/93370913/153771232-9056638a-e454-44bd-84a5-5021de723422.png)
+
+
+## Setup/Installation Requirements
+ 1.Install Node Version Manager, Nodejs and Node Package Manager and Angular CLI.
 
 ## Development server
+Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Language used
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+TypeScript - used for adding functionality to the app
 
-## Build
+Html Markup and has been used to write the markup
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+CSS is used for styling the app
 
-## Running unit tests
+bootstrap css framework has been used for the styling as well
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# API-token
+### Live Site
+View [Live](https://vyonna6519.github.io/quotes/)
+### License
+This project is under the  [MIT](LICENSE.md) license
