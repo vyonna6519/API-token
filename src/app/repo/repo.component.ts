@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SearchRepoService } from '../search-repo.service';
+import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-repo',
   templateUrl: './repo.component.html',
@@ -8,15 +9,10 @@ import { SearchRepoService } from '../search-repo.service';
 export class RepoComponent implements OnInit {
   searchRepoQuery!: string;
   repos!:any;
+  SearchRepoRequestService: any;
 
   constructor(private SearchRepoService: SearchRepoService) { }
-  search(){
-    this.searchrepo(this.searchRepoQuery)
-  }
-  searchrepo(searchRepoQuery: string) {
-    throw new Error('Method not implemented.');
-  }
-
+  
   ngOnInit(): void {
   }
 
