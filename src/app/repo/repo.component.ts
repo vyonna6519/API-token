@@ -22,7 +22,7 @@ export class RepoComponent implements OnInit {
         console.log(this.repos);
       }
     );
-    throw new Error('Method not implemented.');
+    ;
   }
 
   ngOnInit(): void {
