@@ -11,8 +11,20 @@ export class RepoComponent implements OnInit {
   repos!:any;
   SearchRepoRequestService: any;
 
-  constructor() { }
-  
+  constructor(private SearchRepoService: SearchRepoService) { }
+  search(){
+    this.searchrepo(this.searchRepoQuery)
+  }
+  searchrepo(searchRepoQuery: string) {
+    this.SearchRepoRequestService.reporequest(searchRepoQuery).subscribe(
+      (response: any) => {
+        this.repos = response.items;
+        console.log(this.repos);
+      }
+    );
+    throw new Error('Method not implemented.');
+  }
+
   ngOnInit(): void {
   }
 
