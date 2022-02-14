@@ -1,23 +1,20 @@
-<nav class="navbar navbar-light bg-success ">
-    <h3>Search for user.</h3>
-  <form class="">
+<form class="">
   <div class="input-group">
-    <input type="text" class="form-control" name="userinput" placeholder="Search for user " required/>
+    <input type="text" class="form-control" name="searchuserQuery" [(ngModel)]="searchuserQuery" placeholder="Search user" required/>
     <div class="input-group-btn">
       <button class="btn btn-default" type="submit" (click)="search()" >
-        <i class="glyphicon glyphicon-search"></i>
+       Search
       </button>
     </div>
   </div>
 </form>
-</nav>
 
 <div class="row">
-  <div class="col-sm-3">
+  <div class="col-sm-6">
     <div class="card">
       <div class="card-body bg-light">
         <img [src]="user.avatar_url" alt="" class="img-fluid" width="150px">
-        <h5 class="card-title">User nam: {{user.name}}</h5>
+        <h5 class="card-title">User name: {{user.name}}</h5>
         <h5 class="card-title">Login name: {{searchuserQuery}}</h5>
         <p class="card-text">Bio:{{user.bio}}</p>
         <p class="card-text">joined github:{{user.created_at|date}}</p>

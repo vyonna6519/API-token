@@ -1,0 +1,9 @@
+.input-group {
+    width: 60%;
+}
+
+.input-group-btn {
+    background-color: rgb(143, 44, 44);
+    color: white;
+    font-weight: bold;
+}

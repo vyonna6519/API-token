@@ -11,13 +11,14 @@ export class UserComponent implements OnInit {
   searchuserQuery!: string;
   user!: User;
   repos!: any[]
-  SearchUserRequestService: any;
+  // SearchUserRequestService: any;
   constructor(
     private SearchUserService: SearchUserService,
     private HttpClient: HttpClient
   ) {
     
   }
+  
 
    search(){
      this.searchUser(),
@@ -25,12 +26,12 @@ export class UserComponent implements OnInit {
    }
 
   searchUser() {
-    this.SearchUserRequestService.getUsers(this.searchuserQuery);
-    this.user = this.SearchUserRequestService.users;
+    this.SearchUserService.getUsers(this.searchuserQuery);
+    this.user = this.SearchUserService.users;
     console.log(this.user);
   }
   searchRepos(searchuserQuery: string) {
-    this.SearchUserRequestService.searchrepos(searchuserQuery).subscribe(
+    this.SearchUserService.searchrepos(searchuserQuery).subscribe(
       (response: any) => {
         this.repos = (response);
         console.log(this.repos)
@@ -39,6 +40,7 @@ export class UserComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    
   }
 
 }
